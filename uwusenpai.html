@@ -2,23 +2,42 @@
 <html>
 
 <head>
-
-<title>ABOUT ME</title>
-
+    <title>ABOUT ME</title>
 </head>
 
 <body>
 
-
 <div style="text-align: left;">
     <a href="index.html">← Zurück zur Startseite</a>
-</div> <br>
-       <br> <h1>About me</h1>                  
-Ich Ali bin ein ganz braver Junge <3 <br>                                                            
+</div>
 
-<br> <img src="BAKA.jpg" width="400"> <br><br><br><br>
-stimmt das? <br>
-<input>
+<br>
+
+<h1>About me</h1>
+
+Ich Ali bin ein ganz braver Junge &lt;3 <br>
+
+<br>
+<img src="BAKA.jpg" width="400">
+<br><br>
+
+Stimmt das?
+
+<br><br>
+
+<input type="text" id="eingabe" placeholder="Schreib deine Meinung">
+<button onclick="abschicken()">Absenden</button>
+
+<p id="ausgabe"></p>
+
+
+<script>
+function abschicken() {
+    let text = document.getElementById("eingabe").value;
+    document.getElementById("ausgabe").innerHTML = 
+        "Du hast geschrieben: " + text;
+}
+</script>
 
 </body>
 
